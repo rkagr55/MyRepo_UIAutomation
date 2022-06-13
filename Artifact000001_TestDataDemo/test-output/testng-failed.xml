@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [sRegression Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" parallel="tests" name="test1(failed)">
+    <classes>
+      <class name="tests.TCID1">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="Test1"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="Test2"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.TCID1 -->
+    </classes>
+  </test> <!-- test1(failed) -->
+  <test thread-count="5" parallel="tests" name="test2(failed)">
+    <classes>
+      <class name="tests.TCID2">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="Test3"/>
+          <include name="afterSuite"/>
+          <include name="Test4"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.TCID2 -->
+    </classes>
+  </test> <!-- test2(failed) -->
+  <test thread-count="5" parallel="tests" name="test3(failed)">
+    <classes>
+      <class name="tests.TCID3">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="Test5"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="Test6"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.TCID3 -->
+    </classes>
+  </test> <!-- test3(failed) -->
+  <test thread-count="5" parallel="tests" name="test4(failed)">
+    <classes>
+      <class name="tests.TCID4">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="Test8"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="Test7"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.TCID4 -->
+    </classes>
+  </test> <!-- test4(failed) -->
+</suite> <!-- Failed suite [sRegression Suite] -->
