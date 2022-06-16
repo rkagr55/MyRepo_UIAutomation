@@ -1,0 +1,10 @@
+node {
+	stage ('SCM checkout'){
+		git "https://github.com/rkagr55/MyRepo01"
+		}
+	stage ('Build'){
+    	dir("Artifact001") {
+	   bat 'mvn clean compile test'
+       }
+}
+}
